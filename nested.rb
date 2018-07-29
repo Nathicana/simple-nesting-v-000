@@ -15,7 +15,7 @@ def hopper
           :languages => ["C"]
         }
      }
-
+programmer_hash[:grace_hopper]
 
 end
 
@@ -37,6 +37,8 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+     
+     programmer_hash[:alan_kay][:known_for]
 end
 
 def dennis_ritchies_language
@@ -55,6 +57,9 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+     
+programmer_hash[:dennis_ritchie][:languages][0]
+   
 end
 
 def adding_matz
@@ -80,6 +85,9 @@ def adding_matz
         }
      }
 
+programmer_hash.shift[:yukihiro_matsumoto] 
+
+
     
 end
 
@@ -102,7 +110,9 @@ def changing_alan
      #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
      alans_new_info = "GUI"
      
-     
+     programmer_hash[:alan_kay] = [{
+  "known_for" => 12345678}]
+    
 end
 
 def adding_to_dennis
@@ -122,4 +132,16 @@ def adding_to_dennis
         }
      }
 
+programmer_hash[:dennis_ritchie][:languages] << "Assembly"
 end
+
+#params[:user][:keys_attributes] = {
+#  :secret_key => 12345678,
+#  :role => 1
+#}
+
+# RIGHT!
+#params[:user][:keys_attributes] = [{
+#  "secret_key" => 12345678,
+#  "role" => 1
+#}]
