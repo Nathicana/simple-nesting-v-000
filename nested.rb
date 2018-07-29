@@ -1,4 +1,6 @@
 
+require 'pry'
+
 def hopper
 	programmer_hash =
  		{
@@ -57,7 +59,7 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
-
+binding.pry
 programmer_hash[:dennis_ritchie][:languages][0]
 
 end
@@ -131,8 +133,8 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
-
-programmer_hash[:dennis_ritchie] =  "languages" => "Assembly"
+binding.pry
+programmer_hash[:dennis_ritchie][:languages] => "Assembly"
 end
 
 #params[:user][:keys_attributes] = {
