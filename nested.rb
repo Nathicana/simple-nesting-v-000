@@ -139,17 +139,6 @@ def adding_to_dennis
         }
      }
 
-programmer_hash[:dennis_ritchie][:languages] = "Assembly"
+programmer_hash[:dennis_ritchie][:languages][0] = "Assembly"
 programmer_hash
 end
-
-#params[:user][:keys_attributes] = {
-#  :secret_key => 12345678,
-#  :role => 1
-#}
-
-# RIGHT!
-#params[:user][:keys_attributes] = [{
-#  "secret_key" => 12345678,
-#  "role" => 1
-#}]
